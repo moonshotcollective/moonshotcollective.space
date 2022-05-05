@@ -388,7 +388,7 @@ function App(props) {
 
   const [walletMenu, setWalletMenu] = useState(false);
   const [pageMenu, setPageMenu] = useState(false);
-  const [statics, setStatics] = useState({ members: [], projects: [] });
+  const [statics, setStatics] = useState({ members: [], projects: [], old_projects: [] });
 
   useEffect(() => {
     (async () => {
@@ -401,6 +401,8 @@ function App(props) {
       }
     })();
   }, []);
+
+
 
   return (
     <div>
@@ -433,15 +435,15 @@ function App(props) {
               </a>
               <a
                 target="_Blank"
-                href="https://trello.com/invite/b/qDaciNgF/7bfb25669446bd208922768a0b593c05/moonshot-collective"
+                href="https://www.notion.so/gitcoin/570577bafb234971bec4c7da194f20dd?v=b9d0b1fd59a142519b4a17a251f49738"
               >
-                <li>Projects</li>
+                <li>Initiatives</li>
               </a>
-              <a target="_Blank" href="https://t.me/joinchat/BHPBtqODJGo0NDdh">
-                <li>Discussion</li>
+              <a target="_Blank" href="https://discord.gg/SdKHH4brrE">
+                <li>Discord</li>
               </a>
-              <a target="_Blank" href="https://github.com/austintgriffith/moonshot">
-                <li>Code</li>
+              <a target="_Blank" href="https://github.com/moonshotcollective">
+                <li>GitHub</li>
               </a>
             </ul>
           </nav>
@@ -681,8 +683,23 @@ function App(props) {
           </figure>
         </section>
       </article>
+      <article id="retired-projects">
+        <section className="column">
+          <h1>Retired Projects</h1>
+        </section>
+        <section className="content-projects">
+          {statics.old_projects.map(({ name, link }) => (
+            <figure data-kinetics-attraction key={name}>
+              <a href={link}>
+                <SVG src="assets/images/project-3.svg" />
+                <figcaption>{name}</figcaption>
+              </a>
+            </figure>
+          ))}
+        </section>
+      </article>
       {/* SUBSCRIBE */}
-      <article id="subscribe">
+      {/* <article id="subscribe">
         <section className="column">
           <h1>Get Involved</h1>
           <p>Are you a builder who wants to work on public goods? Click below to join the workstream email group.</p>
@@ -709,8 +726,7 @@ function App(props) {
                 {!loading ? "Sign and subscribe" : "Loading.."}
               </button>
               <p style={{ marginTop: "20px" }}>{result}</p>
-              {/* <span style={{ marginRight: 8 }}>🔏</span> <span style={{ marginRight: 8 }}>sign as </span>
-              <Address noLink style={{ zIndex: -1 }} value={address} fontSize={16} ensProvider={mainnetProvider} /> */}
+              
             </>
           ) : (
             <button data-kinetics-attraction className="btn" onClick={loadWeb3Modal}>
@@ -718,7 +734,7 @@ function App(props) {
             </button>
           )}
         </section>
-      </article>
+      </article> */}
       <footer>
         <div className="wrapper" style={{ marginBottom: "40px" }}>
           {/* pls load as regular svg inline with react */}
