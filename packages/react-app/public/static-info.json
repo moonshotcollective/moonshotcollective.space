@@ -2,33 +2,32 @@
   "members": [
     { "name": "Chimeremeze \"Bliss\" Ukah" },
     { "name": "Ankit \"QEDK\"" },
-    { "name": "Jason \"Jax\" Romero" },
+    { "name": "Jason \"Jaxcoder\"" },
     { "name": "Will \"willsputra\"" },
-    { "name": "Kevin \"emu\" Merek" },
+    { "name": "Kevin \"Emu\"" },
     { "name": "Michael Green" },
     { "name": "Fahim" },
     { "name": "Chase Dragan" },
     { "name": "Sameer" },
-    { "name": "Lindsey Thrift" },
+    { "name": "Lindsey" },
     { "name": "Hans" },
     { "name": "Alex \"Blind Nabbler\"" },
     { "name": "Anuj" },
     { "name": "Damu" },
     { "name": "Bhargav" },
-    { "name": "Supriya" },
+    { "name": "Supriyaa" },
     { "name": "Varun" },
     { "name": "Umar" }
   ],
   "projects": [
-    { "name": "Scaffold-eth", "link": "https://github.com/scaffold-eth/scaffold-eth" },
-    { "name": "Scaffold-eth-typescript", "link": "https://github.com/scaffold-eth/scaffold-eth-typescript" },
-    { "name": "Internet of Jobs", "link": "" },
-    { "name": "Conviction Voting", "link": "" }
+    { "name": "GTC Utility | Grants 2..0", "link": "/" },
+    { "name": "Conviction Voting", "link": "https://github.com/moonshotcollective/conviction-voting" }
   ],
   "old_projects": [
-    { "name": "dRecuiter", "link": "https://github.com/moonshotcollective/drecruit" },
+    { "name": "Recruiter.party", "link": "https://github.com/moonshotcollective/recruiter.party" },
     { "name": "Tip.party", "link": "https://github.com/moonshotcollective/tip.party" },
     { "name": "Pay.party", "link": "https://github.com/moonshotcollective/pay.party" },
-    { "name": "Tokenstream.party", "link": "https://github.com/moonshotcollective/tokenstream.party" }
+    { "name": "Tokenstream.party", "link": "https://github.com/moonshotcollective/tokenstream.party" },
+    { "name": "Internet of Jobs", "link": "/" }
   ]
 }
